@@ -1,0 +1,19 @@
+{
+  "name": "react-classname-elements",
+  "version": "1.0.0",
+  "description": "Generates components with parsed classnames",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bernd Strehl <bernd.strehl@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Strernd/react-classname-elements"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.6.0"
+  }
+}

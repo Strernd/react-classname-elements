@@ -5,6 +5,7 @@ const domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio'
     'circle', 'clipPath', 'defs', 'ellipse', 'foreignObject', 'g', 'image', 'line', 'linearGradient', 'mask', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'text', 'tspan'];
 const generator = {};
 domElements.forEach(el => {
-    generator[el] = (...args) => props => React.createElement(el, { ...props, className: cn(...args) }, props.children)
-})
-export default generator;
+    generator[el] = (...args) => props => React.createElement(el, { ...props, className: cn(...args.map(arg => typeof arg === 'function' ? arg(props) : arg)) }, props.children)
+});
+
+module.exports = generator;

@@ -7,6 +7,6 @@ The arguments are parsed by the [classnames package function](https://www.npmjs.
 Basic example:
 ```js
 const tw = require('react-classname-elements'); // Named after tailwind
-const Container = tw.div("container flex rounded bg-grey-light", {"bg-orange" : this.props.isHighlighted})
+const Container = tw.div("container flex rounded bg-grey-light", props => ({"bg-orange" : props.isHighlighted}))
 ```
 

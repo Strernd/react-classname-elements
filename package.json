@@ -4,7 +4,8 @@
   "description": "Generates components with parsed classnames",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:coverage": "jest --coverage && open coverage/lcov-report/index.html"
   },
   "author": "Bernd Strehl <bernd.strehl@gmail.com>",
   "license": "ISC",
@@ -15,5 +16,14 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "react": "^16.6.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "jest": "^23.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
   }
 }

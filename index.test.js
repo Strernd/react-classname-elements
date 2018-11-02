@@ -26,4 +26,5 @@ describe('generator', () => {
     expect(wrapper.hasClass('invisible-class')).toEqual(false);
   });
 
+
 });

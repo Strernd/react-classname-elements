@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "filter-react-dom-props": "0.0.2",
     "react": "^16.6.0"
   },
   "devDependencies": {
